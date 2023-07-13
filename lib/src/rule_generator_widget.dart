@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:rrule_generator/localizations/english.dart';
 import 'package:rrule_generator/localizations/text_delegate.dart';
-import 'package:rrule_generator/src/periods/period.dart';
-import 'package:rrule_generator/src/pickers/interval.dart';
-import 'package:rrule_generator/src/periods/yearly.dart';
-import 'package:rrule_generator/src/periods/monthly.dart';
-import 'package:rrule_generator/src/periods/weekly.dart';
 import 'package:rrule_generator/src/periods/daily.dart';
+import 'package:rrule_generator/src/periods/monthly.dart';
+import 'package:rrule_generator/src/periods/period.dart';
+import 'package:rrule_generator/src/periods/weekly.dart';
+import 'package:rrule_generator/src/periods/yearly.dart';
 import 'package:rrule_generator/src/pickers/helpers.dart';
 import 'package:intl/intl.dart';
+import 'package:rrule_generator/src/pickers/interval.dart';
 import 'package:rrule_generator/src/rrule_generator_config.dart';
 
 class RRuleGenerator extends StatelessWidget {

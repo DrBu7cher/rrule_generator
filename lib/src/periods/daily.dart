@@ -1,8 +1,10 @@
+// ignore_for_file: avoid_implementing_value_types
+
 import 'package:flutter/material.dart';
 import 'package:rrule_generator/localizations/text_delegate.dart';
+import 'package:rrule_generator/src/periods/period.dart';
 import 'package:rrule_generator/src/pickers/helpers.dart';
 import 'package:rrule_generator/src/pickers/interval.dart';
-import 'package:rrule_generator/src/periods/period.dart';
 
 import '../rrule_generator_config.dart';
 
@@ -58,7 +60,7 @@ class Daily extends StatelessWidget implements Period {
                 config: config,
               )),
               Padding(
-                padding: const EdgeInsets.only(left: 8.0),
+                padding: const EdgeInsets.only(left: 8),
                 child: Text(textDelegate.days),
               ),
             ],

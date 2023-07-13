@@ -1,7 +1,9 @@
+// ignore_for_file: avoid_implementing_value_types
+
 import 'package:flutter/material.dart';
 import 'package:rrule_generator/localizations/text_delegate.dart';
-import 'package:rrule_generator/src/pickers/interval.dart';
 import 'package:rrule_generator/src/periods/period.dart';
+import 'package:rrule_generator/src/pickers/interval.dart';
 import 'package:rrule_generator/src/pickers/weekday.dart';
 
 import '../pickers/helpers.dart';
@@ -52,7 +54,7 @@ class Weekly extends StatelessWidget implements Period {
       weekdayEnd = weekdayEnd == -1 ? initialRRule.length : weekdayEnd;
       final weekdays = initialRRule.substring(
           weekdayIndex, weekdayEnd == -1 ? initialRRule.length : weekdayEnd);
-      for (int i = 0; i < 7; i++) {
+      for (var i = 0; i < 7; i++) {
         if (weekdays.contains(weekdaysShort[i])) {
           weekdayNotifiers[i].value = true;
         }

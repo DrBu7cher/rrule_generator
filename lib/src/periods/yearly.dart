@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_implementing_value_types
+
 import 'package:flutter/material.dart';
 import 'package:rrule_generator/localizations/text_delegate.dart';
 import 'package:rrule_generator/src/periods/period.dart';
