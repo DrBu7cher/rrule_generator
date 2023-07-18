@@ -1,6 +1,8 @@
 class RRuleTextDelegate {
   String get repeat => 'Repeat';
 
+  String get end => 'End';
+
   String get day => 'Day';
 
   String get byDayInMonth => 'Repeat on';
@@ -22,8 +24,6 @@ class RRuleTextDelegate {
   String get on => 'On';
 
   String get instances => 'instance(s)';
-
-  String get end => 'End';
 
   String get neverEnds => 'Never ends';
 

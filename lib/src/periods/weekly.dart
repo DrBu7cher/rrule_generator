@@ -5,9 +5,9 @@ import 'package:rrule_generator/localizations/text_delegate.dart';
 import 'package:rrule_generator/src/periods/period.dart';
 import 'package:rrule_generator/src/pickers/interval.dart';
 import 'package:rrule_generator/src/pickers/weekday.dart';
+import 'package:rrule_generator/src/rrule_generator_config.dart';
 
 import '../pickers/helpers.dart';
-import '../rrule_generator_config.dart';
 
 class Weekly extends StatelessWidget implements Period {
   @override

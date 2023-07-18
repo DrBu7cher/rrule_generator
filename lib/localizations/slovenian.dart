@@ -53,46 +53,46 @@ class SlovenianRRuleTextDelegate implements RRuleTextDelegate {
 
   @override
   List<String> get daysInMonth => [
-    'Prvi',
-    'Drugo',
-    'Tretji',
-    'Četrtič',
-    'Posledný',
-  ];
+        'Prvi',
+        'Drugo',
+        'Tretji',
+        'Četrtič',
+        'Posledný',
+      ];
 
   @override
   List<String> get allMonths => [
-    'Január',
-    'Február',
-    'Marec',
-    'Apríl',
-    'Smieť',
-    'Jún',
-    'Júl',
-    'Augusta',
-    'September',
-    'Október',
-    'Novembra',
-    'December',
-  ];
+        'Január',
+        'Február',
+        'Marec',
+        'Apríl',
+        'Smieť',
+        'Jún',
+        'Júl',
+        'Augusta',
+        'September',
+        'Október',
+        'Novembra',
+        'December',
+      ];
 
   @override
   List<String> get weekdays => [
-    'Senin',
-    'Selasa',
-    'Rabu',
-    'Kamis',
-    'Jumat',
-    'Sabtu',
-    'Minggu',
-  ];
+        'Senin',
+        'Selasa',
+        'Rabu',
+        'Kamis',
+        'Jumat',
+        'Sabtu',
+        'Minggu',
+      ];
 
   @override
   List<String> get periods => [
-    'Ročne',
-    'Mesačne',
-    'Týždenne',
-    'denne',
-    'Nikdy',
-  ];
+        'Ročne',
+        'Mesačne',
+        'Týždenne',
+        'denne',
+        'Nikdy',
+      ];
 }

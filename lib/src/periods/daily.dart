@@ -5,8 +5,7 @@ import 'package:rrule_generator/localizations/text_delegate.dart';
 import 'package:rrule_generator/src/periods/period.dart';
 import 'package:rrule_generator/src/pickers/helpers.dart';
 import 'package:rrule_generator/src/pickers/interval.dart';
-
-import '../rrule_generator_config.dart';
+import 'package:rrule_generator/src/rrule_generator_config.dart';
 
 class Daily extends StatelessWidget implements Period {
   @override
@@ -61,7 +60,10 @@ class Daily extends StatelessWidget implements Period {
               )),
               Padding(
                 padding: const EdgeInsets.only(left: 8),
-                child: Text(textDelegate.days),
+                child: Text(
+                  textDelegate.days,
+                  style: config.textStyle,
+                ),
               ),
             ],
           ),

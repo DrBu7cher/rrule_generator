@@ -1,10 +1,11 @@
+// ignore_for_file: avoid_implementing_value_types
+
 import 'package:flutter/material.dart';
 import 'package:rrule_generator/localizations/text_delegate.dart';
+import 'package:rrule_generator/src/periods/period.dart';
 import 'package:rrule_generator/src/pickers/helpers.dart';
 import 'package:rrule_generator/src/pickers/interval.dart';
-import 'package:rrule_generator/src/periods/period.dart';
-
-import '../rrule_generator_config.dart';
+import 'package:rrule_generator/src/rrule_generator_config.dart';
 
 class Monthly extends StatelessWidget implements Period {
   @override
@@ -39,8 +40,8 @@ class Monthly extends StatelessWidget implements Period {
   void handleInitialRRule() {
     if (initialRRule.contains('BYMONTHDAY')) {
       monthTypeNotifier.value = 0;
-      int dayIndex = initialRRule.indexOf('BYMONTHDAY=') + 11;
-      String day = initialRRule.substring(
+      final dayIndex = initialRRule.indexOf('BYMONTHDAY=') + 11;
+      final day = initialRRule.substring(
           dayIndex, dayIndex + (initialRRule.length > dayIndex + 1 ? 2 : 1));
       if (day.length == 1 || day[1] != ';') {
         dayNotifier.value = int.parse(day);
